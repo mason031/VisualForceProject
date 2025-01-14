@@ -1,0 +1,11 @@
+<apex:page controller = "AccountCustomController">
+    
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+<apex:stylesheet value = "{!$Resource.Challenge5}"/>
+
+ <apex:form>
+    <p id = 'AccountName'> This is your account {!account.name} </p>
+    
+ </apex:form>
+</apex:page>
