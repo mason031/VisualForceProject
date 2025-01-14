@@ -5,7 +5,8 @@
 <apex:stylesheet value = "{!$Resource.Challenge5}"/>
 
  <apex:form>
-    <p id = 'AccountName'> This is your account {!account.name} </p>
-    
+   <apex:pageBlock>
+      <p id = 'AccountName'> This is your account {!account.name} </p>
+   </apex:pageBlock>
  </apex:form>
 </apex:page>

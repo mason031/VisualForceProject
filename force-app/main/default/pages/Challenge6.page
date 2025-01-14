@@ -1,0 +1,21 @@
+<apex:page standardController="Account" extensions="AccountExtension" docType="html-5.0">
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+<apex:form>
+    <apex:pageBlock>
+        <div>
+            Enter an account name: 
+        </div>
+        <apex:inputText value="{!accountName}"/>
+        <div>
+            {!a.name}
+        </div>
+
+    
+    <apex:pageBlockButtons>
+        <apex:commandButton value = "Display Records" action="{!queryAccount}"/>
+    </apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+<!-- End Default Content REMOVE THIS -->
+</apex:page>
