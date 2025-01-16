@@ -1,9 +1,10 @@
-<apex:page standardController="Account" recordSetVar="accounts">
+<apex:page standardController="Account" recordSetVar="accounts" renderAs="pdf">
 <!-- Begin Default Content REMOVE THIS -->
 <h1>Congratulations</h1>
 This is your new Page
 <apex:form>
     <apex:pageBlock>
+        <apex:outputText value = "{!$Label.AboutMe}"/>
         <apex:pageBlockTable value = "{!accounts}" var="acc">
             <apex:column value = "{!acc.name}"/>
         </apex:pageBlockTable>
