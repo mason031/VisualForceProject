@@ -1,0 +1,14 @@
+<apex:page controller = "AccountRelatedContactsController" >
+<!-- Begin Default Content REMOVE THIS -->
+<apex:pageBlock>
+    <apex:pageBlockTable value = "{!listWrapped}" var = "accCon">
+        <apex:column>
+            <apex:outputText value = "{!accCon.a.Name}"/>
+            <br/>
+            <apex:outputText value = "{!accCon.s}"/>
+        </apex:column>
+    </apex:pageBlockTable>
+</apex:pageBlock>
+
+<!-- End Default Content REMOVE THIS -->
+</apex:page>

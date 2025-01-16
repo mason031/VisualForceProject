@@ -1,0 +1,11 @@
+<apex:page controller = "AccountRelatedContactsController" docType="html-5.0">
+<!-- Begin Default Content REMOVE THIS -->
+ <apex:pageBlock>
+    <apex:Form>
+        <apex:input type ="text" value = "{!filter}"/>
+        <apex:commandButton value = "Submit" action = "{!ListPage}"/>
+    </apex:Form>
+ </apex:pageBlock>
+
+<!-- End Default Content REMOVE THIS -->
+</apex:page>

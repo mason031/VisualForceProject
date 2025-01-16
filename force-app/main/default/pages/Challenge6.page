@@ -35,7 +35,7 @@
             </apex:pageBlockSection>
         
         <apex:pageBlockButtons>
-            <apex:commandButton value="Update Records" action="{!saveRecords}" id="updateRecords" />
+            <apex:commandButton value="Update Records" action="{!saveRecords}"  id="updateRecords" />
         </apex:pageBlockButtons>
     </apex:pageBlock>
 
