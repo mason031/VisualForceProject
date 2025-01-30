@@ -1,0 +1,8 @@
+<template>
+    <template lwc:if={record}>
+        <div>child</div>
+        <div>{record.Name} with {record.AnnualRevenue}</div>
+        <lightning-button label='Delete' data-recordid={record.Id} onclick={deleteAccount}></lightning-button>
+    </template>
+
+</template>

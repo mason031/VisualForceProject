@@ -1,0 +1,13 @@
+<template>
+    <template lwc:if={caseList.data}>
+        <lightning-datatable 
+            columns={columns}
+            data={caseList.data}
+            key-field="Id"
+            hide-checkbox-column="true">
+        </lightning-datatable>
+    </template>
+    <c-challenge5 oncreatecase={handleChildEvent}></c-challenge5>
+   
+    <!-- <lightning-input label = "message" type = "text" lwc:ref = "input"></lightning-input> -->
+</template>

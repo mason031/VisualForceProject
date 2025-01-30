@@ -1,0 +1,20 @@
+<template>
+    <div class ='slds-card'>
+    <template lwc:if={accList.data}>
+        <div class = "slds-grid slds-gutters slds-wrap">
+        <template for:each={accList.data} for:item="account">
+            <lightning-card key ={account.id} class = 'slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_2-of-12 slds-m-vertial_medium'>
+            <c-challenge8child  record={account}
+                ondeletedaccount={refreshlist}></c-challenge8child>
+            </lightning-card>
+        </template>
+    </div> 
+    </template>
+    
+    <lightning-record-edit-form onsuccess={refreshlist} object-api-name={object_api_name}>
+        <lightning-input-field field-name={name}></lightning-input-field>
+        <lightning-input-field field-name={annualrevenue}></lightning-input-field>
+        <lightning-button type = "submit" variant="brand" name="save" label="Create Account"></lightning-button>
+    </lightning-record-edit-form>
+</div>
+</template>

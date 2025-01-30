@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+    <lightning-input label = "add a new task" type = "text" lwc:ref = "input"></lightning-input>
+    <lightning-button label = "add" onclick={handleClick}></lightning-button>
+    <ul>
+        <template for:each={items} for:item = 'item' for:index = 'index'>
+            <li key={item}>{item}{index}</li>
+            <lightning-button key={item} label = "remove item" data-itemindex={index} onclick ={removeItem}></lightning-button>
+        </template>
+    </ul>
+    </lightning-card>
+</template>
